@@ -2,4 +2,10 @@ let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','L
 
 //declare your function here
 
+function filterByName(names, word){
+    return names.filter(function(name){
+        return name.toLowerCase().includes(word);
+    })
+}
+
 console.log(filterByName(names, 'am'));
